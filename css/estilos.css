@@ -8,4 +8,249 @@
 
 body {
     font-family: 'Nunito', sans-serif;
+    color: #3f3f3f;
+    font-size: 20px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+.sombraflecha {
+    filter: drop-shadow(2px 2px 6px black);
+}
+
+@keyframes intermitente {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+/* Cabecera-barra de navegación */
+
+header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;    
+    top: 0;
+    padding: 20px 0;
+
+}
+
+.franja {
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 2px 2px 6px rgba(5, 5, 5, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.logo {
+    height: 50px;
+    width: 80px;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 2px rgba(5, 5, 5, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 20px;
+}
+
+.logotipo {
+    height: 42px;
+    width: 42px;
+}
+
+.burger {
+    font-size: 34px;
+    display: none;
+}
+
+nav {
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 2px rgba(5, 5, 5, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 20px;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    color: #c3ab26;
+}
+
+nav ul li a.activo {
+    color: #c3ab26;
+}
+
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    background-image: url('../img/casadelujo.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 70px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero a {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 60px;
+    animation-name: intermitente;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+.hero a:hover {
+    color: black;
+}
+
+/* Empresa */
+
+.empresa {
+    padding: 30px 110px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c3ab26' fill-opacity='0.17' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.top {
+    height: 40px;
+    width: 40px;
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c3ab26' fill-opacity='0.17' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer p {
+    font-size: 18px;
+    padding: 5px;
+}
+
+footer p a {
+    color: white;
+}
+
+
+.izdo {
+    padding: 20px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.centro {
+    padding: 0 20px 20px 20px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer a {
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: #c3ab26;
+}
+footer .activo {
+    color: #c3ab26;
+}
+
+
+.dcho {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.rrss {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    flex-grow: 1;
+}
+
+.copy {
+    padding: 5px;
+    width: 100%;
+}
+
+.copy p {
+    font-size: 14px;
+    text-align: center;
 }
