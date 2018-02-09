@@ -1,3 +1,5 @@
+/* Estilos generales */
+
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,700');
 
 * {
@@ -40,6 +42,7 @@ header {
     position: fixed;    
     top: 0;
     padding: 20px 0;
+    z-index: 1;
 
 }
 
@@ -50,7 +53,6 @@ header {
     box-shadow: 2px 2px 6px rgba(5, 5, 5, 0.7);
     position: fixed;
     top: 0;
-    z-index: -1;
 }
 
 .logo {
@@ -124,6 +126,7 @@ nav ul li a.activo {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    box-shadow: 0px 4px 12px black;
 }
 
 .hero h1 {
@@ -151,11 +154,100 @@ nav ul li a.activo {
     color: black;
 }
 
+/* Seccion */
+
+.seccion {
+    margin: 40px;
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url('../img/logo2.png');
+    background-position-x: left;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
 /* Empresa */
 
 .empresa {
     padding: 30px 110px;
 }
+
+/* Paginas */
+
+.paginas {
+    margin: 10px; 
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    padding: 10px;
+    flex-basis: 300px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 20px;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #c3ab26;
+    border: solid 1px transparent;
+    box-shadow: 2px 2px 6px black;
+}
+
+.btn:hover {
+    color: #c3ab26;
+    background-color: black;
+}
+
+/* Formulario newsletter */
+
+.miniform {
+    margin: 20px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniform p {
+    margin: 40px 20px 0 20px;
+    color: #c3ab26;
+    font-size: 28px;
+    text-align: center;
+    background-color: white;
+}
+
+.miniform input {
+    border: solid 1px #c3ab26;
+    color: #3f3f3f;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.miniform .boton {
+    border: solid 1px #c3ab26;
+    background-color: #c3ab26;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.miniform .boton:hover {
+    border: solid 1px black;
+}
+
 
 /* Footer */
 
@@ -167,6 +259,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
+    box-shadow: 0px -4px 12px black;
 }
 
 .top {
@@ -184,6 +277,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px -4px 12px black;
 }
 
 
@@ -243,6 +337,11 @@ footer .activo {
     justify-content: center;
     font-size: 50px;
     flex-grow: 1;
+}
+
+.logo2 {
+    font-size: 40px;
+    color: white;
 }
 
 .copy {
