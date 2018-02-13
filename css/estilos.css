@@ -278,7 +278,7 @@ nav ul li a.activo {
     font-style: italic;
     border: solid 1px black;
     border-bottom: none;
-    background-color: #dbc233;
+    background-image: url('../img/fondosub2.jpg');
     box-shadow: 0px 2px 8px black;
     border-radius: 0 0 15px 15px;
 }
@@ -378,20 +378,20 @@ form h3 {
     align-self: flex-end;
 }
 
-input {
+form input {
     font-size: 20px;
     padding: 5px;
     border: solid 2px #c3ab26;
     width: 75%;
 }
 
-input:focus {
+form input:focus {
     outline: none;
     background-color: #c3ab26;
     color: white;
 }
 
-input::-webkit-input-placeholder {
+form input::-webkit-input-placeholder {
     color: #c3ab26;
 }
 
@@ -422,6 +422,87 @@ input::-webkit-input-placeholder {
     background-repeat: no-repeat;
     text-indent: 30px;
 }
+
+/* Comprar y Alquilar*/
+
+/* Tarjetas */
+
+.contprincipal {
+    margin: 20px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(2, 430px);
+    grid-gap: 40px;
+    justify-content: center;
+}
+
+.tarjeta {
+    border: solid 2px #c3ab26;
+    border-radius: 0 0 12px 12px;
+    width: 300px;
+    height: 430px;
+    box-shadow: 4px 4px 8px black;
+}
+
+.datos {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.direccion {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+.infop {
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.precio {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+    color: black;
+}
+
+.imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.imagen img {
+    width: 300px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+}
+
+.btnp {
+    text-decoration: none;
+    background-color: #c3ab26;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-bottom: solid 4px #746200;
+}
+
+.btnp:hover {
+    background-color: rgb(112, 112, 112);
+    border-bottom: solid 4px black;
+}
+
 
 /* Footer */
 
