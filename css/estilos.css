@@ -46,7 +46,6 @@ header {
     position: fixed;    
     top: 0;
     padding: 20px 0;
-    z-index: 1;
 
 }
 
@@ -57,6 +56,7 @@ header {
     box-shadow: 2px 2px 6px black;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -210,8 +210,7 @@ nav ul li a.activo {
 }
 
 .btn:hover {
-    color: #c3ab26;
-    background-color: black;
+    background-color: rgb(112, 112, 112);
 }
 
 /* Formulario newsletter */
@@ -250,6 +249,7 @@ nav ul li a.activo {
 }
 
 .miniform .boton:hover {
+    background-color: rgb(112, 112, 112);
     border: solid 1px black;
 }
 
@@ -274,7 +274,8 @@ nav ul li a.activo {
     padding: 50px 5% 10px 130px;
     position: fixed;
     top: 0;
-    font-size: 20px;
+    font-size: 18px;
+    color: white;
     font-style: italic;
     border: solid 1px black;
     border-bottom: none;
@@ -282,6 +283,12 @@ nav ul li a.activo {
     box-shadow: 0px 2px 8px black;
     border-radius: 0 0 15px 15px;
 }
+
+.submenu a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* Contendor */
 
@@ -425,9 +432,41 @@ form input::-webkit-input-placeholder {
 
 /* Comprar y Alquilar*/
 
+.espacio {
+    margin: 120px 0 20px 0;
+}
+
+.numeracion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.numeracion p a{
+    margin: 0 10px;
+    padding: 8px;
+    font-size: 25;
+    border: solid 1px black;
+    box-shadow: 1px 1px 3px black;
+}
+
+.numeracion p a:hover {
+    border: solid 2px black;
+    padding: 12px 8px;
+    color: black;
+}
+
+.numeracion .numeroactivo {
+    border: solid 2px black;
+    padding: 12px 8px;
+    color: black;
+}
+
 /* Tarjetas */
 
 .contprincipal {
+    padding: 0 10%;
     margin: 20px;
     display: grid; 
     grid-template-columns: repeat(auto-fit, 300px);
@@ -507,7 +546,8 @@ form input::-webkit-input-placeholder {
 /* Footer */
 
 footer {
-    padding: 5px 10px 5px 50px;
+    margin-top: 100px;
+    padding: 5px 50px;
     background-color: #000000;
         background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c3ab26' fill-opacity='0.17' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     color: white;
@@ -549,7 +589,7 @@ footer p a {
 
 .izdo {
     padding: 20px;
-    flex-basis: 300px;
+    flex-basis: 330px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -558,46 +598,14 @@ footer p a {
 }
 
 .centro {
-    padding: 20px 0px;
-    flex-basis: 300px;
+    padding: 0 20px 20px 20px;
+    flex-basis: 330px;
     flex-grow: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.centro1 {
-    width: 150px;
-    padding: 0 20px 0 40px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
-
-.centro2 {
-    width: 150px;
-    padding: 0 20px 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.secundario {
-    color: #959494;
-}
-
-.secundario:hover {
-    color: #c3ab26;
-}
-
-.separador { 
-    border: solid 1px #c3ac2691;
-    height: 100px;
-}
-
 
 footer a {
     color: white;
@@ -619,7 +627,7 @@ footer .activo {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    flex-basis: 300px;
+    flex-basis: 330px;
     flex-grow: 1;
 }
 
