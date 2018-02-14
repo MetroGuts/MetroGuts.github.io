@@ -34,7 +34,6 @@ h1, h2, h3 {
     100% {opacity: 0;}
 }
 
-
 /* Cabecera-barra de navegación */
 
 .headerinicio {
@@ -100,7 +99,6 @@ header {
     background-position: center;
 }
 
-
 .burger {
     font-size: 34px;
     display: none;
@@ -120,7 +118,6 @@ nav {
     margin: 18px 20px 20px 20px;
     z-index: 2;
 }
-
 
 nav ul {
     list-style: none;
@@ -142,7 +139,6 @@ nav ul li a:hover {
 nav ul li a.activo {
     color: #c3ab26;
 }
-
 
 /* Hero */
 
@@ -1350,12 +1346,14 @@ hr {
     }
 
     .izdo {
-        margin-top: 20px;
-        flex-basis: 200px;
+        margin-top: 0px;
+        padding-bottom: 2px;
+        flex-basis: 190px;
     }
 
     .centro {
-        margin-top: 30px;
+        margin-top: 0;
+        padding-bottom: 2px;
         flex-basis: 150px;
     }
 
@@ -1436,6 +1434,10 @@ hr {
 
     .contenedor2 {
         margin-top: 20px; 
+    }
+
+    .mapa {
+        margin-left: 0;
     }
 
 /* Detalles compra y alquiler*/
