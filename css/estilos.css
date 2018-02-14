@@ -556,7 +556,7 @@ form input::-webkit-input-placeholder {
 /* Detalles compra y alquiler*/
 
 .detallado {
-    margin: 0 20%;
+    margin: 0 10%;
     font-size: 20px;
     color: #3f3f3f;
     text-align: center;
@@ -587,23 +587,23 @@ hr {
 
 .mapadet {
     margin: 60px 0;
-    width: 50%;
+    width: 80%;
     height: 400px;
 }
 
 .galeria {
-    padding: 0 20%;
+    padding: 0 10%;
     margin: 20px;
     display: grid; 
-    grid-template-columns: repeat(auto-fit, 450px);
-    grid-template-rows: repeat(2, 380px);
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-rows: repeat(2, 350px);
+    grid-gap: 30px;
     justify-content: center;
 }
 
 .gallery {
-    width: 450px;
-    height: 380px;
+    width: 400px;
+    height: 350px;
     box-shadow: 2px 2px 6px black;
 }
 
@@ -788,6 +788,25 @@ footer .activo {
         align-items: center;
     }
     
+    /* Detalles compra y alquiler*/
+
+.detallado {
+    margin: 0 7%;
+    font-size: 18px;
+}
+
+.detallado h1 {
+    font-size: 30px;
+}
+
+.detallado p {
+    text-align: left;
+}
+
+
+.barranav {
+    font-size: 16px;
+}
 
 }
 
@@ -1061,6 +1080,73 @@ footer .activo {
     #boton {
         font-size: 17px;
     }
+
+        /* Detalles compra y alquiler*/
+
+.detallado {
+    margin: 0;
+    font-size: 18px;
+    color: #3f3f3f;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+hr {
+    width: 100%;
+}
+
+.detallado h1 {
+    color: black;
+    margin: 30px 0;
+    font-size: 26px;
+    text-align: left;
+}
+
+.detallado p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.detalladomapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mapadet {
+    margin: 60px 0;
+    width: 100%;
+    height: 300px;
+}
+
+.galeria {
+    padding: 0 10%;
+    margin: 20px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, 380px);
+    grid-template-rows: repeat(2, 330px);
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.gallery {
+    width: 380px;
+    height: 330px;
+    box-shadow: 2px 2px 6px black;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barranav {
+    font-size: 16px;
+}
     
 }
 
@@ -1244,4 +1330,51 @@ footer .activo {
     .contenedor2 {
         margin-top: 20px; 
     }
+
+            /* Detalles compra y alquiler*/
+
+.detallado {
+    margin: 0;
+    font-size: 16px;
+    color: #3f3f3f;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detallado h1 {
+    font-size: 24px;
+}
+
+
+.mapadet {
+    margin: 60px 0;
+    width: 100%;
+    height: 200px;
+}
+
+.galeria {
+    padding: 0 5%;
+    grid-template-columns: repeat(auto-fit, 230px);
+    grid-template-rows: repeat(2, 220px);
+
+}
+
+.gallery {
+    width: 230px;
+    height: 220px;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barranav p {
+    font-size: 14px;
+}
+    
 }
