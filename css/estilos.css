@@ -394,7 +394,6 @@ form input::-webkit-input-placeholder {
     color: #c3ab26;
 }
 
-
 #boton {
     width: 90px;
     text-align: center;
@@ -491,8 +490,12 @@ form input::-webkit-input-placeholder {
 }
 
 .datos {
+    height: 240px;
     padding: 10px;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .direccion {
@@ -643,7 +646,6 @@ footer {
     box-shadow: 0px -4px 12px black;
 }
 
-
 footer p {
     font-size: 18px;
     padding: 5px;
@@ -652,7 +654,6 @@ footer p {
 footer p a {
     color: white;
 }
-
 
 .izdo {
     padding: 20px;
@@ -686,7 +687,6 @@ footer a:hover {
 footer .activo {
     color: #c3ab26;
 }
-
 
 .dcho {
     padding: 20px;
@@ -729,13 +729,8 @@ footer .activo {
 @media (max-width: 1150px) {
     
     .contacto {
-        width: 100%;
-        padding: 0px 7%;
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
         flex-wrap: wrap;
-    
     }
 
     .info {        
@@ -750,13 +745,8 @@ footer .activo {
         font-size: 18px;
     }
 
-    form {
-        margin-top: 30px;
-        padding: 15px;
-    }
     form h3 {  
         font-size: 26px;
-    
     }
 
     form input {
@@ -776,9 +766,6 @@ footer .activo {
     }
 
     footer {
-        margin-top: 100px;
-        padding: 5px 10px;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -799,7 +786,6 @@ footer .activo {
     text-align: left;
 }
 
-
 .barranav {
     font-size: 16px;
 }
@@ -816,61 +802,32 @@ footer .activo {
     
     .hero h2 {
         font-size: 20px;
-        margin-bottom: 60px;
     }
     
     .hero a {
         font-size: 35px;
-        margin-bottom: 60px;
     }
 
     .col {
         margin: 0 20px;
-        padding: 10px;
-        flex-basis: 200px;
-    }
-
-    .izdo, .centro, .dcho {
         flex-basis: 200px;
     }
 
     footer {
         margin-top: 100px;
         padding: 5px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     /* Contacto */
 
-    .contacto {
-        width: 100%;
-        padding: 30px 7%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
     .info {        
         margin: 30px 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;        
+        flex-direction: column;       
         flex-basis: 600px;
     }
 
-   
-
-
     .linea {  
         margin-bottom: 70px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
         flex-direction: column;
     }
 
@@ -904,10 +861,7 @@ footer .activo {
 
     .headerinicio {
         height: 50px;
-        width: 100%;
         background-color: black;
-        padding: 20px 0;
-        z-index: 1;
         padding: 5px 15px;
         box-shadow: 0px 2px 8px black;
     }
@@ -916,8 +870,6 @@ footer .activo {
         height: 50px;
         width: 100%;
         background-color: black;
-        padding: 20px 0;
-        z-index: 1;
         padding: 5px 15px;
         background-image: none;
         border-radius: 0;
@@ -930,7 +882,6 @@ footer .activo {
     .logo {
         height: 40px;
         width: 40px;
-        background-color: black;
         padding: 0;
         margin: 0;
     }
@@ -955,15 +906,11 @@ footer .activo {
     
     .logo:hover {
         background-image: url('../img/logosombra2.png');
-        background-repeat: no-repeat;
-        background-position: center;
     }
-    
     
     .burger {
         font-size: 28px;
         display: initial;
-        z-index: 2;
         color: white;
     }
     
@@ -976,23 +923,11 @@ footer .activo {
     }
     
     .hero h2 {
-        font-size: 20px;
         margin-bottom: 50px;
     }
     
     .hero a {
-        font-size: 35px;
         margin-bottom: 50px;
-    }
-
-    .col {
-        margin: 0 20px;
-        padding: 10px;
-        flex-basis: 200px;
-    }
-
-    .izdo, .centro, .dcho {
-        flex-basis: 200px;
     }
 
     h1 {
@@ -1009,7 +944,6 @@ footer .activo {
 
     .col {
         margin: 0 10px;
-        padding: 10px;
         flex-basis: 130px;
     }
 
@@ -1031,7 +965,6 @@ footer .activo {
 
     .miniform {
         margin: 10px;
-        width: 100%;
     }
     
     .miniform input {
@@ -1047,10 +980,6 @@ footer .activo {
     footer {
         margin-top: 100px;
         padding: 5px 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .izdo, .centro, .dcho {
@@ -1064,40 +993,12 @@ footer .activo {
     
     /* Contacto */
 
-    .contacto {
-        width: 100%;
-        padding: 30px 7%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .info {        
-        margin: 30px 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;        
-        flex-basis: 600px;
-    }
-
     .info p {
         font-size: 17px;
-    }
-
-    form {
-        margin-top: 30px;
-        padding: 15px;
     }
     
     form h3 {  
         font-size: 22px;
-    }
-
-    form input {
-        font-size: 17px;
-        width: 90%;
     }
 
     #boton {
@@ -1106,150 +1007,55 @@ footer .activo {
 
 /* Detalles compra y alquiler*/
 
-.detallado {
-    margin: 0;
-    font-size: 18px;
-    color: #3f3f3f;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    .detallado {
+        margin: 0;
+        font-size: 18px;
+        text-align: left;
+        align-items: flex-start;
+    }
 
-hr {
-    width: 100%;
-}
+    hr {
+        width: 100%;
+    }
 
-.detallado h1 {
-    color: black;
-    margin: 30px 0;
-    font-size: 26px;
-    text-align: left;
-}
+    .detallado h1 {
+        margin: 30px 0;
+        font-size: 26px;
+    }
 
-.detallado p {
-    margin-bottom: 20px;
-    text-align: left;
-}
+    .mapadet {
+        width: 100%;
+        height: 300px;
+    }
 
-.detalladomapa {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    .galeria {
+        grid-template-columns: repeat(auto-fit, 380px);
+        grid-template-rows: repeat(2, 330px);
+    }
 
-.mapadet {
-    margin: 60px 0;
-    width: 100%;
-    height: 300px;
-}
+    .gallery {
+        width: 380px;
+        height: 330px;
+    }
 
-.galeria {
-    padding: 0 10%;
-    margin: 20px;
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, 380px);
-    grid-template-rows: repeat(2, 330px);
-    grid-gap: 30px;
-    justify-content: center;
-}
+    .espacio h2 {
+        font-size: 24px;
+    }
 
-.gallery {
-    width: 380px;
-    height: 330px;
-    box-shadow: 2px 2px 6px black;
-}
+    /* Tarjetas */
 
-.formulario {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.barranav {
-    font-size: 16px;
-}
+    .infop {
+        padding: 20px 10px 0px 10px;
+    }
 
-.espacio h2 {
-    font-size: 24px;
-}
+    .precio {
+        padding: 10px 10px 20px 10px;
+    }
 
-/* Tarjetas */
-
-.contprincipal {
-    padding: 0 10%;
-    margin: 20px;
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, 300px);
-    grid-template-rows: repeat(2, 430px);
-    grid-gap: 40px;
-    justify-content: center;
-}
-
-.tarjeta {
-    width: 300px;
-    height: 430px;
-}
-
-.datos {
-    padding: 10px;
-    font-size: 18px;
-}
-
-.direccion {
-    margin-top: 20px;
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-}
-
-.infop {
-    padding: 20px 10px 0px 10px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-}
-
-.precio {
-    padding: 10px 10px 20px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 19px;
-    color: black;
-}
-
-.imagen {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    text-align: center;
-}
-
-.imagen img {
-    width: 300px;
-}
-
-.details {
-    display: flex;
-    justify-content: center;
-}
-
-.btnp {
-    text-decoration: none;
-    background-color: #c3ab26;
-    color: white;
-    padding: 6px;
-    font-size: 16px;
-    border-radius: 5px;
-    border-bottom: solid 4px #746200;
-}
-
-.btnp:hover {
-    background-color: rgb(112, 112, 112);
-    border-bottom: solid 4px black;
-}
+    .btnp {
+        padding: 6px;
+        font-size: 16px;
+    }
 
 }
 
@@ -1263,14 +1069,11 @@ hr {
     }
     
     .hero h2 {
-        font-size: 20px;
-        margin-bottom: 50px;
         text-align: center;
     }
     
     .hero a {
         font-size: 24px;
-        margin-bottom: 50px;
     }
 
     h1 {
@@ -1287,62 +1090,31 @@ hr {
 
     .paginas {
         margin: 5px; 
-        padding: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
     }
 
     .col {
-        margin: 0 10px;
-        padding: 10px;
         flex-basis: 200px;
     }
 
-    .col img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .btn {
-        margin: 5px;
-        font-size: 18px;
-        padding: 5px 8px;
-    }
-
     .miniform p {
-        margin: 20px 10px 0 10px;
         font-size: 18px;
     }
-
-    .miniform {
-        margin: 10px;
-        width: 100%;
-    }
-    
     
     .miniform input {
         font-size: 18px;
-        padding: 5px;
         width: 90%;
         margin: 5px;
     }
     
     .miniform .boton {
         font-size: 18px;
-        padding: 5px;
         width: 65px;
     }
 
     footer {
         margin-top: 50px;
         padding: 5px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .izdo {
@@ -1363,7 +1135,6 @@ hr {
 
     footer p {
         font-size: 14px;
-        padding: 5px;
     }
 
     footer a {
@@ -1377,21 +1148,11 @@ hr {
 /* Contacto */
 
     .contacto {
-        width: 100%;
         padding: 30px 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
     }
 
     .info {        
-        margin: 10px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        flex-basis: 600px;       
+        margin: 10px 0;      
     }
 
     label {
@@ -1400,11 +1161,6 @@ hr {
 
     .info p {
         font-size: 15px;
-    }
-
-    form {
-        margin-top: 30px;
-        padding: 15px;
     }
     
     form h3 {  
@@ -1442,153 +1198,88 @@ hr {
 
 /* Detalles compra y alquiler*/
 
-.detallado {
-    margin: 0;
-    font-size: 16px;
-    color: #3f3f3f;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    .detallado {
+        font-size: 16px;
+    }
 
-.detallado h1 {
-    font-size: 24px;
-}
+    .detallado h1 {
+        font-size: 24px;
+    }
 
+    .mapadet {
+        height: 200px;
+    }
 
-.mapadet {
-    margin: 60px 0;
-    width: 100%;
-    height: 200px;
-}
+    .galeria {
+        padding: 0 5%;
+        grid-template-columns: repeat(auto-fit, 230px);
+        grid-template-rows: repeat(2, 220px);
 
-.galeria {
-    padding: 0 5%;
-    grid-template-columns: repeat(auto-fit, 230px);
-    grid-template-rows: repeat(2, 220px);
+    }
 
-}
+    .gallery {
+        width: 230px;
+        height: 220px;
+    }
 
-.gallery {
-    width: 230px;
-    height: 220px;
-}
+    .barranav p {
+        font-size: 14px;
+    }
 
-.formulario {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.barranav p {
-    font-size: 14px;
-}
+    .numeracion p a{
+        margin: 0 8px;
+        padding: 6px;
+        font-size: 22;
+    }
 
-.numeracion {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+    .numeracion p a:hover {
+        padding: 10px 6px;
+    }
 
-.numeracion p a{
-    margin: 0 8px;
-    padding: 6px;
-    font-size: 22;
-}
+    .numeracion .numeroactivo {
+        padding: 10px 6px;
+    }
 
-.numeracion p a:hover {
-    padding: 10px 6px;
-}
+    /* Tarjetas */
 
-.numeracion .numeroactivo {
-    padding: 10px 6px;
-}
+    .contprincipal {
+        grid-template-columns: repeat(auto-fit, 250px);
+        grid-template-rows: repeat(2, 380px);
+    }
 
-    
-.formulario form {
-    height: 400px;
-}
+    .tarjeta {
+        width: 250px;
+        height: 380px;
+    }
 
-/* Tarjetas */
+    .datos {
+        height: 190px;
+        padding: 4px;
+        font-size: 12px;
+    }
 
-.contprincipal {
-    padding: 0 10%;
-    margin: 20px;
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, 250px);
-    grid-template-rows: repeat(2, 380px);
-    grid-gap: 40px;
-    justify-content: center;
-}
+    .direccion {
+        margin-top: 7px;
+        font-size: 12px;
+    }
 
-.tarjeta {
-    width: 250px;
-    height: 380px;
-}
+    .infop {
+        font-size: 12px;
+    }
 
-.datos {
-    padding: 4px;
-    font-size: 12px;
-}
+    .precio {
+        font-size: 12px;
+    }
 
-.direccion {
-    margin-top: 7px;
-    font-size: 12px;
-    font-style: italic;
-    text-align: center;
-}
-
-.infop {
-    padding: 10px 10px 0px 10px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-}
-
-.precio {
-    padding: 10px 10px 20px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    color: black;
-}
-
-.imagen {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    text-align: center;
-}
-
-.imagen img {
-    width: 300px;
-}
-
-.details {
-    display: flex;
-    justify-content: center;
-}
-
-.btnp {
-    text-decoration: none;
-    background-color: #c3ab26;
-    color: white;
-    padding: 1px 3px;
-    font-size: 14px;
-    border-radius: 5px;
-    border-bottom: solid 4px #746200;
-}
-
+    .btnp {
+        padding: 1px 3px;
+        font-size: 14px;
+    }
     
 }
 
 @media (max-width: 260px) {
     .numeracion {
         width: 200px;
-        display: flex;
-        justify-content: center;
     }
 }
