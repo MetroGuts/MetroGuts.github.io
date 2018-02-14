@@ -864,9 +864,32 @@ footer .activo {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;        
-        flex-basis: 480px;
+        flex-basis: 600px;
     }
 
+   
+
+
+    .linea {  
+        margin-bottom: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    form input {
+        font-size: 17px;
+        width: 90%;
+    }
+    
+    .formulario form {
+        height: 500px;
+    }
+
+    .enviar {
+        align-self: center;
+    }
 
 }
 
@@ -1037,7 +1060,11 @@ footer .activo {
     .izdo, .centro, .dcho {
         flex-basis: 180px;
     }
-
+    
+        
+    .formulario form {
+        height: 400px;
+    }
     
     /* Contacto */
 
@@ -1056,7 +1083,7 @@ footer .activo {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;        
-        flex-basis: 480px;
+        flex-basis: 600px;
     }
 
     .info p {
@@ -1074,7 +1101,7 @@ footer .activo {
 
     form input {
         font-size: 17px;
-        width: 60%;
+        width: 90%;
     }
 
     #boton {
@@ -1352,8 +1379,8 @@ hr {
 /* Contacto */
 
     .contacto {
-        width: 300px;
-        padding: 30px 3px;
+        width: 100%;
+        padding: 30px 5%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1366,7 +1393,7 @@ hr {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 400px;       
+        flex-basis: 600px;       
     }
 
     label {
@@ -1388,7 +1415,7 @@ hr {
 
     form input {
         font-size: 15px;
-        width: 130px;
+        width: 250px;
     }
 
     #boton {
@@ -1477,6 +1504,11 @@ hr {
     padding: 10px 6px;
 }
 
+    
+.formulario form {
+    height: 400px;
+}
+
 /* Tarjetas */
 
 .contprincipal {
@@ -1542,8 +1574,8 @@ hr {
     text-decoration: none;
     background-color: #c3ab26;
     color: white;
-    padding: 4px;
-    font-size: 16px;
+    padding: 1px 3px;
+    font-size: 14px;
     border-radius: 5px;
     border-bottom: solid 4px #746200;
 }
